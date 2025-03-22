@@ -8,12 +8,14 @@ public class TaskFourth {
         Scanner scanner = new Scanner(System.in);
         String date = scanner.nextLine();
         scanner.close();
+        formatDate(date);
+    }
 
+    public static void formatDate(String date) {
         if (date.matches("\\d{4}-\\d{2}-\\d{2}")) {
             System.out.println("Формат даты введен верно.");
         } else {
             System.out.println("Формат даты введен неверно.");
         }
-
     }
 }

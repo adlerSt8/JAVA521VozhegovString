@@ -17,7 +17,14 @@ public class TaskFirst {
             massiveText[length - i] = temp;
         }
 
-        System.out.println(Arrays.toString(massiveText));
+        //Вариант 2
+        StringBuilder string = new StringBuilder(text);
+        System.out.println("Начальный вариант: " + text);
+        System.out.println("Решение, способ 1: ");
+        System.out.println(string.reverse());
+
+        System.out.println("Способ 2: ");
+        System.out.println("Начальный вариант: " + text);
         System.out.println(String.valueOf(massiveText));
     }
 }
